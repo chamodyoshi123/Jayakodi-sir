@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>සස ජාතකය - Video</title>
+  <link rel="stylesheet" href="story.css"/>
+  <script defer src="story.js"></script>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="story-video">
+    <source src="Mystory.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="instructions-container">
+    <a class="back-button" href="index.html">Back</a>
+
+    <div class="poem-container blur-box">
+      <p class="poem">
+        නෙන නෙක මල් පිපී තුරුලිය නැළ  වෙන්ට<br/>
+        මුව පොවු සා පැටවු සැම දහම් සැන  සෙන්ට<br/>
+        කළ ගුණ දම් මෙනෙහි කොට පසුවග  මහනුන්ට<br/>
+        බුදුහිමි දහම් දෙසුවා නිවනට  යන්ට
+      </p>
+    </div>
+
+    <div class="bottom-text-container blur-box">
+     <p>චමෝද් විසින්</p>
+<p>කසුන් ජයකොඩි සර් වෙත </p>
+      
+    </div>
+
+  </div>
+
+  <!-- Fullscreen Video Overlay -->
+  <div id="fullscreen-video" class="video-overlay hidden">
+    <video controls autoplay id="video-player">
+      <source src="your-instructional-video.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+    <button class="exit-video-button" onclick="closeVideo()">←</button>
+  </div>
+</body>
+</html>
+
